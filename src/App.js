@@ -1,8 +1,13 @@
-
 import './App.css';
 import { useState, useEffect } from 'react';
+import axios from 'axios'
 
-function App() {
+
+
+
+const App = () => {
+  const [contacts, setContacts] = useState([]);
+  const [error, setError] = useState(null);
 
 
   const [baseImage, setBaseImage] = useState("");
@@ -32,7 +37,8 @@ function App() {
   const [price, set_price_Val] = useState("")
   const [amount, set_amount_Val] = useState("")
   const [description, set_Des_Val] = useState("")
-  const click = () => {
+  const FormSummit = (e) => {
+    
     alert(name)
   }
   const change_name_event = event => {
@@ -49,26 +55,21 @@ function App() {
   }
 
 
-  
+
   const [posts, setPosts] = useState([]);
 
-  function test_api({
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
         setPosts(data);
-      })
-      .catch((err) => {
-        console.log(err.message);
       });
   }, []);
-}
-  
+
 
   return (
-    test_api();
+
 
 
     <div spaceY={4} className='App'>

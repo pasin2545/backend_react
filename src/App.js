@@ -5,6 +5,11 @@ import axios from 'axios'
 
 
 
+
+const api = axios.create({
+  baseURL: 
+})
+
 const App = () => {
   const [contacts, setContacts] = useState([]);
   const [error, setError] = useState(null);

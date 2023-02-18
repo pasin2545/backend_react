@@ -1,12 +1,43 @@
 .App {
   text-align: start;
+  background-image: 
+  url(
+"https://i.pinimg.com/originals/d1/1e/20/d11e20d44501e1a59439b5344e07f5d7.jpg");
+  background-size: "cover";
+  height: 100vh;
+  margin-top: -70px;
+  font-size:50px;
+  background-repeat:no-repeat; 
 }
 
+/*
+.bg{
+  
+.GeeksForGeeks {
+  background-image: 
+  url(
+"https://i.pinimg.com/originals/d1/1e/20/d11e20d44501e1a59439b5344e07f5d7.jpg");
+  background-size: "cover";
+  height: 100vh;
+  margin-top: -70px;
+  font-size:50px;
+  background-repeat:no-repeat; 
+}
+};*/
 .br{
   margin: 50px auto 0 auto;
   width: 400px;
   height: 20px;
 }
+.imgbr{
+  margin: 50px auto 0 auto;
+  width: 400px;
+  height: 90px;
+}
 
+.input-group-text{
+  font-size: 10px !important;
+
+}
 
 
